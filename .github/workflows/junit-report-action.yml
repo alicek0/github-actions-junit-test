@@ -1,6 +1,10 @@
 name: JUnit Report Action Test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+permissions:
+    contents: read
+    checks: write
+    id-token: write
 jobs:
   JUnit-Report-Action:
     runs-on: ubuntu-latest
