@@ -1,0 +1,10 @@
+name: JUnit Report Action Test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  JUnit-Report-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: JUnit Report Action
+        uses: mikepenz/action-junit-report@v4.0.1
+      - run: echo "💡 The ${{ github.repository }} repository has been tested."
